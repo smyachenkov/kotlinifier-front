@@ -1,8 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 import React, { PureComponent } from "react";
 import ReactDOM from 'react-dom';
 import SuggestionList from "./SuggestionList";
+import ReactGA from 'react-ga';
 
 export default class App extends PureComponent {
   constructor(props) {
@@ -21,16 +21,9 @@ export default class App extends PureComponent {
         {input: event.target.value}
       );
   }
-  /*
-        <input type="submit" value="Suggest Name!"/>
-        <input className="component-search-input"
-          placeholder="Enter the name of your projects... Or just try it!"
-          type='text'
-          onChange={this.myChangeHandler}
-        />
-  */
 
   componentDidMount() {
+    ReactGA.initialize('G-P7KWTYJJNV');
     this.fetchSuggestions()
   }
 
