@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/kotlinifier/static/css/main.457a508c.chunk.css",
-    "main.js": "/kotlinifier/static/js/main.91645bf8.chunk.js",
-    "main.js.map": "/kotlinifier/static/js/main.91645bf8.chunk.js.map",
+    "main.css": "/kotlinifier/static/css/main.56fbb9f8.chunk.css",
+    "main.js": "/kotlinifier/static/js/main.c7c24d08.chunk.js",
+    "main.js.map": "/kotlinifier/static/js/main.c7c24d08.chunk.js.map",
     "runtime-main.js": "/kotlinifier/static/js/runtime-main.ce6bb77a.js",
     "runtime-main.js.map": "/kotlinifier/static/js/runtime-main.ce6bb77a.js.map",
     "static/js/2.b3c32e42.chunk.js": "/kotlinifier/static/js/2.b3c32e42.chunk.js",
@@ -10,14 +10,13 @@
     "static/js/3.e26efb44.chunk.js": "/kotlinifier/static/js/3.e26efb44.chunk.js",
     "static/js/3.e26efb44.chunk.js.map": "/kotlinifier/static/js/3.e26efb44.chunk.js.map",
     "index.html": "/kotlinifier/index.html",
-    "static/css/main.457a508c.chunk.css.map": "/kotlinifier/static/css/main.457a508c.chunk.css.map",
-    "static/js/2.b3c32e42.chunk.js.LICENSE.txt": "/kotlinifier/static/js/2.b3c32e42.chunk.js.LICENSE.txt",
-    "static/media/logo.c4f3fdd2.svg": "/kotlinifier/static/media/logo.c4f3fdd2.svg"
+    "static/css/main.56fbb9f8.chunk.css.map": "/kotlinifier/static/css/main.56fbb9f8.chunk.css.map",
+    "static/js/2.b3c32e42.chunk.js.LICENSE.txt": "/kotlinifier/static/js/2.b3c32e42.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ce6bb77a.js",
     "static/js/2.b3c32e42.chunk.js",
-    "static/css/main.457a508c.chunk.css",
-    "static/js/main.91645bf8.chunk.js"
+    "static/css/main.56fbb9f8.chunk.css",
+    "static/js/main.c7c24d08.chunk.js"
   ]
 }
