@@ -1,0 +1,17 @@
+.suggestion-list {
+  margin: 20;
+  padding-left: 1.5rem;
+}
+
+.suggestion-list li {
+  position: relative;
+  list-style-type: none;
+  padding-left: 2.0rem;
+  margin-bottom: 1.0rem;
+}
+
+.suggestion-list li:before {
+    content: '•';
+    position: absolute;
+    left: 0;
+}

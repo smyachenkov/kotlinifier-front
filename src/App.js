@@ -1,25 +1,72 @@
 import logo from './logo.svg';
 import './App.css';
+import React, { PureComponent } from "react";
+import ReactDOM from 'react-dom';
+import SuggestionList from "./SuggestionList";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends PureComponent {
+  constructor(props) {
+    super(props);
+    this.state = { 
+      suggestions: [],
+      input: "",
+      isLoading: false,
+      error: null
+    };
+  }
+
+
+  inputHandler = (event) => {
+    this.setState(
+        {input: event.target.value}
+      );
+  }
+  /*
+        <input type="submit" value="Suggest Name!"/>
+        <input className="component-search-input"
+          placeholder="Enter the name of your projects... Or just try it!"
+          type='text'
+          onChange={this.myChangeHandler}
+        />
+  */
+
+  componentDidMount() {
+    this.fetchSuggestions()
+  }
+
+  fetchSuggestions() {
+    this.setState({ isLoading: true });
+    fetch("https://ttbzcunqd9.execute-api.us-east-1.amazonaws.com/kotlinifyProjectName")
+        .then(response => response.json())
+        .then(data => this.setState({ suggestions: data.names, isLoading: false }))
+        .catch(error => this.setState({ error, isLoading: false }));
+  }
+
+  render() {
+    const { suggestions, isLoading } = this.state;
+    if (isLoading) {
+      return <form class="form-inline">
+        <section>
+          <div>
+            <h2>Need a name for your next Kotlin project?</h2>
+            <h4>Hang on a second, we will find you a great one!</h4>
+          </div>
+        </section>
+      </form>
+    }
+    return (
+      <form class="form-inline">
+        <section>
+          <div>
+            <h2>Need a name for your next Kotlin project?</h2>
+            <h4>Try one of these:</h4>
+            <SuggestionList suggestions={suggestions} /> 
+            <button class="button" id="give-me-more-button" onClick={() => this.fetchSuggestions()}>
+              <a href="#">Give me more!</a>
+            </button>
+          </div>
+        </section>
+      </form>
+    );
+  }
 }
-
-export default App;
