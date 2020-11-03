@@ -3,6 +3,7 @@ import React, { PureComponent } from "react";
 import ReactDOM from 'react-dom';
 import SuggestionList from "./SuggestionList";
 import ReactGA from 'react-ga';
+import ktMeme from'./kotlin_meme.png';
 
 export default class App extends PureComponent {
   constructor(props) {
@@ -40,10 +41,11 @@ export default class App extends PureComponent {
     if (isLoading) {
       return <form class="form-inline">
         <section>
-          <div>
+          <div class="wait-message">
             <h2>Need a name for your next Kotlin project?</h2>
             <h4>Hang on a second, we will find you a great one!</h4>
           </div>
+          <img class="meme" src={ktMeme}></img>
         </section>
       </form>
     }
@@ -51,13 +53,16 @@ export default class App extends PureComponent {
       <form class="form-inline">
         <section>
           <div>
-            <h2>Need a name for your next Kotlin project?</h2>
-            <h4>Try one of these:</h4>
+            <div>
+              <h2>Need a name for your next Kotlin project?</h2>
+              <h4>Try one of these:</h4>
+            </div>
             <SuggestionList suggestions={suggestions} /> 
             <button class="button" id="give-me-more-button" onClick={() => this.fetchSuggestions()}>
               <a href="#">Give me more!</a>
             </button>
           </div>
+          <img class="meme" src={ktMeme}></img>
         </section>
       </form>
     );

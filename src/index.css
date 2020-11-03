@@ -31,4 +31,15 @@ a {
   text-decoration: none;
 }
 
+.meme {
+  position: inherit;
+  display: none;
+  align-self: baseline;
+  padding-top: 13rem;
+}
 
+@media only screen and (min-width: 1250px) {
+    .meme {
+      display:inherit;
+    }
+}
