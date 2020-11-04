@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/kotlinifier/static/css/main.1a6943fe.chunk.css",
-    "main.js": "/kotlinifier/static/js/main.b2426871.chunk.js",
-    "main.js.map": "/kotlinifier/static/js/main.b2426871.chunk.js.map",
+    "main.js": "/kotlinifier/static/js/main.cc423da7.chunk.js",
+    "main.js.map": "/kotlinifier/static/js/main.cc423da7.chunk.js.map",
     "runtime-main.js": "/kotlinifier/static/js/runtime-main.1e9a68cb.js",
     "runtime-main.js.map": "/kotlinifier/static/js/runtime-main.1e9a68cb.js.map",
     "static/js/2.d7f24258.chunk.js": "/kotlinifier/static/js/2.d7f24258.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.1e9a68cb.js",
     "static/js/2.d7f24258.chunk.js",
     "static/css/main.1a6943fe.chunk.css",
-    "static/js/main.b2426871.chunk.js"
+    "static/js/main.cc423da7.chunk.js"
   ]
 }
