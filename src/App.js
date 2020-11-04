@@ -6,7 +6,8 @@ import Links from "./Links";
 import ReactGA from 'react-ga';
 import ktMeme from './kotlin_meme.png';
 
-ReactGA.initialize('G-P7KWTYJJNV');
+ReactGA.initialize('G-1WKDSD5N2H')
+ReactGA.pageview(window.location.pathname);
 
 export default class App extends PureComponent {
   constructor(props) {
@@ -18,7 +19,6 @@ export default class App extends PureComponent {
       error: null
     };
   }
-
 
   inputHandler = (event) => {
     this.setState(
