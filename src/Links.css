@@ -1,0 +1,18 @@
+.links {
+  position: fixed;
+  bottom: 1rem;
+  right: 2rem;
+  width:auto;
+  display: none;
+}
+
+.link {
+    margin-left: 2rem;
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 1250px) {
+    .links {
+       display:inline;
+    }
+}

@@ -2,8 +2,9 @@ import './App.css';
 import React, { PureComponent } from "react";
 import ReactDOM from 'react-dom';
 import SuggestionList from "./SuggestionList";
+import Links from "./Links";
 import ReactGA from 'react-ga';
-import ktMeme from'./kotlin_meme.png';
+import ktMeme from './kotlin_meme.png';
 
 export default class App extends PureComponent {
   constructor(props) {
@@ -46,6 +47,7 @@ export default class App extends PureComponent {
             <h4>Hang on a second, we will find you a great one!</h4>
           </div>
           <img class="meme" src={ktMeme}></img>
+          <Links /> 
         </section>
       </form>
     }
@@ -62,6 +64,7 @@ export default class App extends PureComponent {
               <a href="#">Give me more!</a>
             </button>
           </div>
+          <Links /> 
           <img class="meme" src={ktMeme}></img>
         </section>
       </form>
