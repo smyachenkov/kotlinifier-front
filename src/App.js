@@ -6,6 +6,8 @@ import Links from "./Links";
 import ReactGA from 'react-ga';
 import ktMeme from './kotlin_meme.png';
 
+ReactGA.initialize('G-P7KWTYJJNV');
+
 export default class App extends PureComponent {
   constructor(props) {
     super(props);
@@ -25,7 +27,6 @@ export default class App extends PureComponent {
   }
 
   componentDidMount() {
-    ReactGA.initialize('G-P7KWTYJJNV');
     this.fetchSuggestions()
   }
 
